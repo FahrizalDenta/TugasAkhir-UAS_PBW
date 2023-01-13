@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesanan</title>
+        <link rel="stylesheet" href="pesanan.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <p class="logo">WarAnKul</p>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>Pesanan Anda</p></div>
+                <div id="cartItem">Keranjang anda kosong</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">Rp.</h2>
+                </div>
+                <div>
+                    <button type="submit" class="btn" onclick="openPopup()">Beli</button>
+                        <div class="popup" id="popup">
+                            <img src="/assets/ceklis.png">
+                            <h2>Terima Kasih</h2>
+                            <br>
+                            <p>Sudah membeli di WarAnKul</p>
+                            <button type="button" onclick="document.location.reload(true)">OK</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="popup.js"></script>
+    </body>
+</html>
